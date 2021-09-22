@@ -1,12 +1,12 @@
-const first = { name: "Alex" };
-const second = { job: "Instructor"};
+class person {
+    constructor(name) {
+        this.name = name; 
+    }
 
-const combined = { ...first, ...second, location: "Italy" };
-console.log(combined);
+    walk() {
+        console.log("walk");
+    }
+}
 
-//cloning
-
-const first = { name: "Alex" };
-const second = { job: "Instructor"};
-
-const clone = { ...first };
+const person = new Person('Alex');
+person.
