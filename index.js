@@ -1,11 +1,8 @@
-const person = {
-    name: 'Alex',
-    walk() {
-      console.log(this);
-    }
-};
+const jobs = [
+    {id: 1, isActive: true},
+    {id: 2, isActive: true},
+    {id: 3, isActive: false},
+];
 
-person.walk();
-
-const walk = person.walk.bind(person);
-walk();
+const activejobs = jobs.filter(function(job) { return job.isActive; });
+const activejobs = jobs.filter (job => job.isActive);
