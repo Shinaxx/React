@@ -1,11 +1,12 @@
-const adress = {
-    street: '',
-    city: '',
-    country: ''
-};
+const first = { name: "Alex" };
+const second = { job: "Instructor"};
 
-const street = adress.street;
-const city = adress.city;
-const country = adress.country;
+const combined = { ...first, ...second, location: "Italy" };
+console.log(combined);
 
-const { street, city, country } = adress;
+//cloning
+
+const first = { name: "Alex" };
+const second = { job: "Instructor"};
+
+const clone = { ...first };
